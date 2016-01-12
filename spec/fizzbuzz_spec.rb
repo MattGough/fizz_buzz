@@ -8,9 +8,14 @@ describe 'fizzbuzz' do
   end
   end
 end
+ (1..100).each do |x|
+  y = x*5
+  if y % 3 != 0
   it 'returns "buzz" when passed 5' do
-  expect(fizzbuzz(5)).to eq 'buzz'
+  expect(fizzbuzz(y)).to eq 'buzz'
   end
+end
+end
   it 'returns "fizzbuzz" when passed 15' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
   end
